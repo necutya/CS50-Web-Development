@@ -2,72 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53abded2-779b-42c6-98c7-0adf3eeed87d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CS50.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/books.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/check_apo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/flask_session/1711393ab49a38fcbf9a67129a2e9a01" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/flask_session/2029240f6d1128be89ddc32729463129" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/flask_session/96d617ac7cc4a7acf5e0f14640be87b0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/flask_session/c8e58304cdf92a7fee01fb52d8167b33" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/goodreads.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/impor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/templates/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/templates/books.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/.idea/Project2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/077b3e70c923c67180c29043ca35c057" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/2029240f6d1128be89ddc32729463129" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/51ca15233098598b603770ab7cecfbf9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/55f4a6d230f6594d1a890473a9c52358" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/56119d428f377d6272aa599df688eb4f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/735de6b2582843c88df1ca2c745a49d8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/76491c91bc8ca268c47f76243e695147" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/a355e58ca5086145a0b4da7c16483485" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/bf50ce50c30798b5a1b71a1354a5d7c1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmp46m54eh7.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmp859gd25e.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpewcvcarr.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpiimn4xen.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpiiy3dffu.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpjiipfp0a.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpkchdv60a.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpkw7mjsv7.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpnq76lr33.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpnufb0s8c.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpocrb8jv2.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/flask_session/tmpukhpcg17.__wz_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/static/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/static/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/static/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/templates/all_chats.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/templates/chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/templates/layout/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/templates/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +184,7 @@
       <workItem from="1591006552685" duration="7930000" />
       <workItem from="1591031858940" duration="13000" />
       <workItem from="1591031881292" duration="13000" />
-      <workItem from="1591031901396" duration="23173000" />
+      <workItem from="1591031901396" duration="23881000" />
     </task>
     <servers />
   </component>
