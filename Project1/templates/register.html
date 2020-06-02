@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {%if errors%}
+        {% for error in errors:%}
+            <p>{{errors.pop(errors.index(error))}}</p>
+        {% endfor %}
+    {%endif%}
+    <form method="post">
+        <fieldset>
+            <legend>Register Form</legend>
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username">
+            <label for="email" >Email</label>
+            <input id="email" type="email" name="email">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password">
+            <label for="confirm_username">Confirm password</label>
+            <input id="confirm_username" type="password" name="confirm_password">
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+</body>
+</html>

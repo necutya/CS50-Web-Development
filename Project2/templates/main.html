@@ -1,0 +1,37 @@
+{%extends "layout/layout.html"%}
+{%block content%}
+<!--    <h1>Hello, {{name}}!</h1>-->
+<!--    <form method="post">-->
+<!--        <h2>You are able to create a new channel.</h2>-->
+<!--        <input name="create" type="submit" value="Create">-->
+<!--        <h2>Log out</h2>-->
+<!--        <input name="logout" type="submit" value="Log out">-->
+<!--    </form>-->
+
+<div class="channels">
+    <div class="channels_preview">
+        <a href="{{url_for('create')}}">Create</a>
+        <a href="{{url_for('show_all')}}">Show all chats</a>
+        <a href="{{url_for('logout')}}">Logout</a>
+    {%if channels%}
+        {%for channel in channels%}
+        <div class="channel" channel_id="{{channel.id}}">
+            <div class="channel_meta">
+                {{channel['name']}}
+            </div>
+        </div>
+        {%endfor%}
+    {%endif%}
+    </div>
+    <div class="chat">
+        <div class="message_view" id="messages">
+            <div class="info">Select a chat</div>
+        </div>
+        <div class="send_text">
+            <textarea type="text" placeholder="Enter text here" id="content" rows="3" cols="45"> </textarea>
+            <button type="submit" id="send">Send</button>
+        </div>
+    </div>
+
+</div>
+{%endblock%}

@@ -1,0 +1,23 @@
+{%extends "layout/layout.html"%}
+{%block content%}
+    <form method="post" action="" class="initial_forms" autocomplete="off">
+        {{form.csrf_token}}
+
+        {%for field in form if field.name != "csrf_token"%}
+            {%if field.name != "submit"%}
+                <label>{{field.label}}</label>
+            {%endif%}
+            <div class="input">
+                {{field}}
+                {%for error in field.errors%}
+                    <p class="hint-error">
+                        {{error}}
+                    </p>
+                {%endfor%}
+            </div>
+        {%endfor%}
+        <p class="hint">
+            Don`t have an account? <a href="{{url_for('register')}}"> Sign up </a>
+        </p>
+    </form>
+{%endblock%}

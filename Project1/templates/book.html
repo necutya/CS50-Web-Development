@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book {{book.title}}</title>
+</head>
+<body>
+    <h1>{{book.title}}</h1>
+    <h2>Author: {{book.author}}</h2>
+    <p>Publication year: {{book.year}}</p>
+    <p>ISBN: {{book.isbn}}</p>
+    <a href="{{url_for('search')}}">Go back to the search</a>
+    {%if reviews %}
+        <h1>Reviews</h1><hr size="5px" color="black">
+        {%for r in reviews%}
+            <p>Name: {{r.username}}</p>
+            <p>Rating: {{r.rating}}</p>
+            <p>Text: {{r.text}}</p>
+            <hr size="1px" color="black">
+        {%endfor%}
+    {%endif%}
+    {%if goodreads%}
+        <h1>GoodReads</h1><hr size="5px" color="black">
+        <p>Work ratings count: {{goodreads.rating_count}}</p>
+        <p>Average count: {{goodreads.avg_rating}}</p>
+        <hr size="5px" color="black">
+    {%endif%}
+    {%if session.get('user_id') %}
+        <h1> Left review </h1>
+        <form method = "post" id = "review">
+            <p>Rating
+                <br>
+                <input name="rating" type="radio" value="1">1<br>
+                <input name="rating" type="radio" value="2">2<br>
+                <input name="rating" type="radio" value="3">3<br>
+                <input name="rating" type="radio" value="4">4<br>
+                <input name="rating" type="radio" value="5">5<br>
+            </p>
+            <label for="text">Review</label><br>
+            <input id="text" name="textarea">
+            <br>
+            <input type="submit" value="Send">
+        </form>
+    {%endif%}
+</body>
+</html>

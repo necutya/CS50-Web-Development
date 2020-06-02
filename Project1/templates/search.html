@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {%if errors%}
+        {% for error in errors:%}
+            <p>{{errors.pop(errors.index(error))}}</p>
+        {% endfor %}
+    {%endif%}
+    <form method="post">
+        <fieldset>
+            <legend>Search Form</legend>
+            <input id="search" type="text" name="search">
+            <input type="submit" value="search">
+        </fieldset>
+    </form>
+    {%if search_results%}
+        <table border="1">
+            <caption>Results</caption>
+            <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+            </tr>
+            {% for result in search_results:%}
+            <tr>
+                <td><a href="{{url_for('isbn', book_isbn = result.isbn)}}">{{result.isbn}}</a></td>
+                <td><a href="{{url_for('book', book_name = result.title)}}">{{result.title}}</a></td>
+                <td><a href="{{url_for('author', author_name = result.author)}}">{{result.author}}</a></td>
+                <td><a href="{{url_for('year', y = result.year)}}">{{result.year}}</a></td>
+            </tr>
+            {%else%}
+                <h1>Not found</h1>
+            {% endfor %}
+        </table>
+    {%endif%}
+</body>
+</html>

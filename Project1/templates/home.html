@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Home page!</h1>
+    <a href="{{url_for('register')}}">Go registration</a>
+    <br>
+    <a href="{{url_for('login')}}">Go login</a>
+    {%if session.get('user_id') %}
+        <p> You are authorized </p>
+        <a href="{{url_for('search')}}">Search a book</a>
+        <br>
+        <a href="{{url_for('logout')}}">Logout</a>
+    {%else%}
+        <p> You are NOT authorized </p>
+    {%endif%}
+</body>
+</html>

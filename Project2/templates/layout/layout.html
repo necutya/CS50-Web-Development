@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link href="{{url_for('static', filename='style.css')}}" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</head>
+<body>
+
+    {%with flashed_messages = get_flashed_messages(with_categories=True)%}
+        {%if flashed_messages%}
+            {%for category, message in flashed_messages%}
+                <div class=" flash {{category}}">
+                    <p>{{message}}</p>
+                </div>
+            {%endfor%}
+        {%endif%}
+    {%endwith%}
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
